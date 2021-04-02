@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#mealItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.mealItem {
+  background-color: #f5eded;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mealItem img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.mealItem p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #1b1a1a;
+}
+#mealDetails {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 650px;
+  background-color: #ffffff;
+  display: none;
+  padding: 20px;
+}
+#mealDetails img {
+  width: 200px;
+}
+#close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #ff8989;
+  padding: 4px 16px;
+  transition: 0.2s;
+  cursor: pointer;
+}
